@@ -1,0 +1,2 @@
+- Copyrights © 2020 [樱神花园](https://yropo.top)
+- Powered by [OneManager](https://github.com/qkqpttgf/OneManager-php) | Theme by [classic](https://github.com/qkqpttgf/OneManager-php/blob/master/theme/classic.html)
