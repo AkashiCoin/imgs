@@ -1,21 +1,18 @@
 name: Gitee repos mirror periodic job
 on:
 # 如果需要PR触发把push前的#去掉
-  pull_request:
-    paths:
-    - '.github/workflows/action.yaml'
-    # Runs at every pull requests submitted in master branch 
-    branches: [ master ]
   push:
-  schedule:
+    branches: [ master ]
+    
+  # schedule:
     # 每天北京时间9点跑
-    - cron:  '0 1 * * *'
+    # - cron:  '0 1 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the Github organization repos to Gitee.
-      uses: AkashiCoin/imgs@master
+      uses: Yikun/hub-mirror-action@master
       with:
         # 必选，需要同步的Github用户（源）
         src: github/AkashiCoin
@@ -33,4 +30,3 @@ jobs:
         # white_list: 'repo_name,repo_name2'
         debug: true
         force_update: true
-        black_list: "mysql-server,kunpeng-mpam,hadoop,kunpengcompute.github.io,spark,spark-website,server,postgres"
