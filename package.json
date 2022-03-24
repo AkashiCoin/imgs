@@ -1,0 +1,11 @@
+{
+  "name": "moe-cdn",
+  "version": "1.0.1",
+  "description": "npm for cdn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marne",
+  "license": "ISC"
+}
