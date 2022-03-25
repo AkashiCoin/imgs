@@ -1,6 +1,6 @@
 {
   "name": "moe-cdn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "npm for cdn",
   "main": "index.js",
   "scripts": {
